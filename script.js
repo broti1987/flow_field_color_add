@@ -19,7 +19,7 @@ var particleAccLimit = 0.1;
 function setup(){
   createCanvas(windowWidth, windowHeight);
   background(bgColor);
-  for(var i=0; i<250; i++){
+  for(var i=0; i<100; i++){
     particles.push(new Particle(new p5.Vector(random(width), random(height))));
   }
   
@@ -29,7 +29,7 @@ function windowResized(){
   resizeCanvas(windowWidth, windowHeight);
   background(bgColor);
   particles = [];
-  for(var i=0; i<250; i++){
+  for(var i=0; i<100; i++){
     particles.push(new Particle(new p5.Vector(random(width), random(height))));
   }
 }
